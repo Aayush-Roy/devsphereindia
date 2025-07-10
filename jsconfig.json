@@ -1,0 +1,47 @@
+// {
+//   "compilerOptions": {
+//     "target": "es5",
+//     "lib": ["dom", "dom.iterable", "esnext"],
+//     "allowJs": true,
+//     "skipLibCheck": true,
+//     "strict": true,
+//     "noEmit": true,
+//     "esModuleInterop": true,
+//     "module": "esnext",
+//     "moduleResolution": "bundler",
+//     "resolveJsonModule": true,
+//     "isolatedModules": true,
+//     "jsx": "preserve",
+//     "incremental": true,
+//     "plugins": [
+//       {
+//         "name": "next"
+//       }
+//     ],
+//     "paths": {
+//       "@/*": ["./*"]
+//     }
+//   },
+//   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+//   "exclude": ["node_modules"]
+// }
+{
+  "compilerOptions": {
+    // Path aliases
+    "baseUrl": ".",               // root of your project
+    "paths": {
+      "@/*": ["./*"]
+    },
+
+    // Optional: VS Code intellisense tweaks
+    "target": "es2020",           // modern JS suggestions
+    "lib": ["dom", "esnext"],     // browser + latest spec
+    "allowJs": true,              // make sure JS files are included
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "jsx": "preserve"
+  },
+
+  // Tell VS Code/Next to index **all** JS/JSX files
+  "include": ["**/*.js", "**/*.jsx"]
+}
