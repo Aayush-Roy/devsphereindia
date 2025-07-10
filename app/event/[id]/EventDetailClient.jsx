@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 import { ArrowLeft, Calendar, Trophy, Users, MapPin, Clock, ExternalLink, Share2, Heart, Link as LinkTr } from 'lucide-react';
 import Link from "next/link";
 import Image from 'next/image';
-import EventMap from '@/app/components/EventMap';
+
 
 export default function EventDetailClient({ event }) {
     const handleShare = async () => {
@@ -109,15 +109,7 @@ export default function EventDetailClient({ event }) {
                     <div>
                       <div className="text-sm text-foreground-muted">Location</div>
                       <div className="text-lg font-medium text-white">{event.location}</div>
-                     {event.coordinates && (
-  <div className="mt-6 h-64 w-full rounded-xl overflow-hidden border border-border">
-    <EventMap
-      lat={event.coordinates.lat}
-      lng={event.coordinates.lng}
-      location={event.location}
-    />
-  </div>
-)}
+                    
 
                     </div>
                   </div>
