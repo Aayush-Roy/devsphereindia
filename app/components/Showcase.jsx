@@ -65,7 +65,7 @@
 
 import { motion } from 'framer-motion';
 import  Link  from 'next/link';
-
+import Image from 'next/image';
 export default function Showcase() {
   return (
     <section className="section-padding bg-background-secondary">
@@ -107,7 +107,8 @@ export default function Showcase() {
             <div className="relative w-full h-96 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-2xl overflow-hidden">
               {/* Placeholder for community image */}
               <div className="absolute inset-0 flex items-center justify-center">
-                <img src="https://i.pinimg.com/736x/64/af/d1/64afd1f6178eff73b29569f846bf7d78.jpg" alt="" />
+                {/* <img src="https://i.pinimg.com/736x/64/af/d1/64afd1f6178eff73b29569f846bf7d78.jpg" alt="" /> */}
+                <Image width={600} height={600} src="/assets/notsjs.jpg"/>
                 {/* <div className="w-48 h-64 bg-gradient-to-br from-primary/30 to-secondary/30 rounded-xl flex items-center justify-center">
                   <div className="text-center">
                     <div className="w-16 h-16 bg-secondary rounded-full mx-auto mb-4 glow-secondary"></div>
