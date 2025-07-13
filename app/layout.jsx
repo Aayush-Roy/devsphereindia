@@ -22,7 +22,6 @@ export const metadata = {
   themeColor: '#8B5CF6',
 
   icons: {
-    // icon: 'https://media.licdn.com/dms/image/v2/D4E0BAQFCD1ZNpARMBA/company-logo_200_200/B4EZe1.rXdHIAI-/0/1751104796589/devsphereindia_community_logo?e=1757548800&v=beta&t=9797OlJiarrDDus4Zn4-xO9iW6IVSYE6qQHAOo-CDMk', // Favicon के लिए
    icon: '/assets/devspherelogo.png',
     shortcut: '/shortcut-icon.png', 
     apple: '/apple-icon.png', 
