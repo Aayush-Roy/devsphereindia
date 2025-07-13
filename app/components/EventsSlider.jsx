@@ -16,7 +16,7 @@ export default function EventsSlider() {
       id: 'immutablex',
       title: 'Careerverse 2025',
       subtitle: 'Careerverse 2025',
-      prize: '$10,000 USD',
+      // prize: '$10,000 USD',
       date: 'July 19, 2025',
       status: 'Registration Open',
       description: 'To equip students with practical insights, confidence, and clarity to kick-start their career prep journeys — with a focus on real conversation, expert-driven guidance, and actionable takeaways.',

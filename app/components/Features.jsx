@@ -116,7 +116,7 @@ export default function Features() {
           viewport={{ once: true }}
         >
           <h2 className="text-4xl md:text-5xl font-sora font-bold mb-4">
-            Why Choose <span className="gradient-text">DevSphere</span>?
+            Why Choose <span className="gradient-text">DevSphereIndia</span>?
           </h2>
           <p className="text-xl text-foreground-muted max-w-2xl mx-auto">
             Your launchpad for hackathons, events, internships, and real‑world collaboration.

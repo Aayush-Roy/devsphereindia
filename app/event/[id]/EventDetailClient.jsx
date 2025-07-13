@@ -5,6 +5,8 @@ import { motion } from 'framer-motion';
 import { ArrowLeft, Calendar, Trophy, Users, MapPin, Clock, ExternalLink, Share2, Heart, Link as LinkTr } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
+import Navbar from '@/app/components/Navbar';
+
 
 export default function EventDetailClient({ event }) {
   const handleShare = async () => {
@@ -34,6 +36,7 @@ export default function EventDetailClient({ event }) {
 
   if (!event) {
     return (
+      
       <div className="min-h-screen bg-background flex items-center justify-center px-4 sm:px-6 lg:px-8"> {/* Added padding for consistency */}
         <div className="text-center">
           <h1 className="text-2xl sm:text-3xl font-bold text-white mb-4">Event Not Found</h1> {/* Responsive font size */}
@@ -46,7 +49,11 @@ export default function EventDetailClient({ event }) {
   }
 
   return (
+    <>
+   
     <div className="min-h-screen bg-background">
+
+     
       {/* Header */}
       <div className="bg-background-secondary border-b border-border">
         {/* Added responsive padding to container-custom */}
@@ -298,6 +305,8 @@ export default function EventDetailClient({ event }) {
           </div>
         </div>
       </div>
+      
     </div>
+    </>
   );
 }

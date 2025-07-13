@@ -94,7 +94,7 @@ export default function Hero() {
               {/* Center Logo */}
               <div className="absolute inset-0 flex items-center justify-center">
                 <div className="w-14 h-14 sm:w-16 sm:h-16 lg:w-20 lg:h-20 bg-gradient-hero rounded-xl flex items-center justify-center shadow-2xl">
-                  <span className="text-white font-bold text-lg sm:text-xl lg:text-2xl">DS</span>
+                  <span className="text-white font-bold text-lg sm:text-xl lg:text-2xl"></span>
                 </div>
               </div>
             </motion.div>
