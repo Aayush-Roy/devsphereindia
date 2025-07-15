@@ -6,6 +6,8 @@ import { ArrowLeft, Calendar, Trophy, Users, MapPin, Clock, ExternalLink, Share2
 import Link from 'next/link';
 import Image from 'next/image';
 import { useState } from 'react';
+import Navbar from '@/app/components/Navbar';
+import Footer from '@/app/components/Footer';
 
 export default function EventDetailClient({ event }) {
   const [activeTab, setActiveTab] = useState('about'); // State to manage active tab
@@ -36,15 +38,20 @@ export default function EventDetailClient({ event }) {
 
   if (!event) {
     return (
+      <>
+     
       <div className="min-h-screen bg-background flex items-center justify-center px-4 sm:px-6 lg:px-8">
+        
         <div className="text-center">
           <h1 className="text-2xl sm:text-3xl font-bold text-white mb-4">Event Not Found</h1>
           <button onClick={() => router.push('/')} className="btn-primary text-base sm:text-lg px-6 py-3">
             Back to Home
           </button>
         </div>
-      </div>
+        </div>
+      </> 
     );
+   
   }
 
   const tabContent = {
@@ -113,7 +120,9 @@ export default function EventDetailClient({ event }) {
 
   return (
     <>
-      <div className="min-h-screen bg-background">
+     <Navbar/>
+      <div className="mt-20 min-h-screen bg-background">
+        
         {/* Header */}
         <div className="bg-background-secondary border-b border-border">
           <div className="container-custom py-4 sm:py-6 px-4 sm:px-6 lg:px-8">
@@ -317,6 +326,7 @@ export default function EventDetailClient({ event }) {
           </div>
         </div>
       </div>
+      <Footer/>
     </>
   );
 }

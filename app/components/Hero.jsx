@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { ArrowRight, Play } from 'lucide-react';
+import { HashLoader } from 'react-spinners';
 
 export default function Hero() {
   return (
@@ -11,6 +12,7 @@ export default function Hero() {
       // On large screens (lg), we remove the padding-top as content is side-by-side
       className="relative min-h-[90vh] pt-24 lg:pt-0 flex items-center justify-center overflow-hidden"
     >
+      <HashLoader color="#895df4" />
       {/* Background Gradient */}
       <div className="absolute inset-0 bg-gradient-to-br from-background via-background-secondary to-background pointer-events-none"></div>
 
@@ -46,8 +48,8 @@ export default function Hero() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
             >
-              Hack. Build. Rise{' '}
-              <span className="gradient-text">Welcome to Devsphere</span>
+              Hack Build Rise{' '}
+              <span className="gradient-text">Welcome to DevsphereIndia</span>
             </motion.h1>
 
             <motion.p
